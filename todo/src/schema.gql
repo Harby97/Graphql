@@ -3,5 +3,10 @@
 # ------------------------------------------------------
 
 type Query {
-  helloworld: String!
+  """Is the first resolver in Graphql"""
+  First_program: String!
+
+  """This resolver return a random number"""
+  Random_Number: Float!
+  Random_From_Zero_To(to: Int): Int!
 }
